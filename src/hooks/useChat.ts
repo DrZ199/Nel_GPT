@@ -54,32 +54,13 @@ export function useChat(options: UseChatOptions = {}): UseChatReturn {
     {
       id: 'welcome',
       role: 'assistant',
-      content: `# Welcome to Nelson-GPT 🩺
+      content: `# Welcome to Nelson-GPT
 
-I'm your pediatric medical AI assistant, powered by the **Nelson Textbook of Pediatrics (22nd Edition)**.
+I'm your pediatric medical AI assistant powered by the Nelson Textbook of Pediatrics.
 
-## How I Can Help:
-- **Evidence-based answers** to pediatric medical questions
-- **Diagnostic guidance** with differential considerations  
-- **Treatment protocols** based on current guidelines
-- **Drug dosing** calculations for pediatric patients
-- **Emergency protocols** (NRP, PALS, BLS)
-
-## Important Notes:
-⚠️ **For healthcare professionals only** - not for patient care decisions
-✅ **All responses include citations** from Nelson Textbook
-🔒 **Evidence-based only** - I won't speculate beyond the literature
-
-**What pediatric question can I help you with today?**`,
+**How can I help you today?**`,
       timestamp: new Date(),
       confidence: 'high',
-      citations: [
-        {
-          chapter: 'Introduction',
-          section: 'Scope of Pediatric Medicine',
-          edition: '22nd Edition',
-        },
-      ],
     },
   ]);
 
